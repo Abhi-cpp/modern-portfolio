@@ -56,7 +56,7 @@ const Home = () => {
           </h1>
           <h2>Embracing the Journey of Becoming a Software Developer.</h2>
           <a href="/portfolio/1/Abhishek_Kumar.pdf" download>
-            <button className="flat-button" >Download Resume</button>
+            <button className="flat-button" >Resume</button>
           </a>
         </div>
         < Logo />
