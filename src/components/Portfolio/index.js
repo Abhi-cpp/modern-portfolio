@@ -4,10 +4,15 @@ import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../../firebase';
+import bla from "./../../data/portfolio.json"
+import { type } from "@testing-library/user-event/dist/type";
 
-const Portfolio = () => { 
+const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const [portfolio, setPortfolio] = useState([]);
+    // const portfolio=bla.portfolio
+    // console.log(portfolio)
+    // console.log(typeof portfolio)
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -20,13 +25,14 @@ const Portfolio = () => {
     });
 
     useEffect(() => {
-        getPortfolio();
+        // getPortfolio();
+        setPortfolio(bla.portfolio)
     }, []);
 
-    const getPortfolio = async () => {
-        const querySnapshot = await getDocs(collection(db, 'portfolio'));
-        setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-    }
+    // const getPortfolio = async () => {
+    //     const querySnapshot = await getDocs(collection(db, 'portfolio'));
+    //     setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
+    // }
 
     const renderPortfolio = (portfolio) => {
         return (
@@ -35,10 +41,10 @@ const Portfolio = () => {
                     portfolio.map((port, idx) => {
                         return (
                             <div className="image-box" key={idx}>
-                                <img 
-                                src={port.image}
-                                className="portfolio-image"
-                                alt="portfolio" />
+                                <img
+                                    src={port.image}
+                                    className="portfolio-image"
+                                    alt="portfolio" />
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
