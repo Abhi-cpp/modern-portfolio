@@ -94,7 +94,7 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className="info-map">
+        {/* <div className="info-map">
           <a href="/portfolio/1/Abhishek_Kumar.pdf" download>
             <button style={
               {
@@ -111,7 +111,7 @@ const Contact = () => {
           </a> <br />
           <br />
           <span>abhishekkumar986874@gmail.com</span>
-        </div>
+        </div> */}
         <div className="map-wrap">
           <embed src="/portfolio/1/Abhishek_Kumar.pdf" className='pdf' />
         </div>
