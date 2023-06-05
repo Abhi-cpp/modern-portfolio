@@ -41,7 +41,6 @@ const Logo = () => {
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches)
     }
-
     mediaQuery.addEventListener('change', handleMediaQueryChange);
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange)

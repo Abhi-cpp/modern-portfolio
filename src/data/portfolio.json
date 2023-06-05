@@ -1,34 +1,52 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "image": "/portfolio/1/code-cast.gif",
+            "title": "Code-Cast",
+            "description": "Real-time code editor for coding practice and interviewing.It also has a video call feature.",
+            "Tech_stack": "Socket.io, WebRTC, Node.js, Express.js, React.js and MongoDB",
+            "url": "https://code-cast-frontend.vercel.app",
+            "github": ""
         },
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "image": "/portfolio/1/shoeshopping.gif",
+            "title": "Shopping Website",
+            "description": "Shoe shopping website with Authentication and cart functionality",
+            "Tech_stack": "Node.js, Express.js, React.js, and MongoDB",
+            "url": "https://shoes-shopping-eta.vercel.app/",
+            "github": ""
         },
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "image": "/portfolio/1/tictac.gif",
+            "title": "Tic-Tac-Toe",
+            "description": "Developed a tic-tac-toe game with an AI's opponent using Game Theory principles.",
+            "Tech_stack": "React.js, JavaScript, GitHub",
+            "url": "https://abhi-cpp.github.io/TIC-TAC/#/play",
+            "github": ""
         },
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "image": "/portfolio/1/simon.gif",
+            "title": "Simon Game",
+            "description": "A Simon game that tests your memory.",
+            "Tech_stack": "JavaScript, HTML, CSS",
+            "url": "https://abhi-cpp.github.io/simon-game/",
+            "github": ""
         },
         {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "image": "/portfolio/1/drum.gif",
+            "title": "Drum Kit",
+            "description": "A drum kit that plays different sounds when you press the keys.",
+            "Tech_stack": "JavaScript, HTML, CSS",
+            "url": "https://abhi-cpp.github.io/Drum-kit/",
+            "github": ""
+        },
+        {
+            "image": "/portfolio/1/weather.gif",
+            "title": "Weather App",
+            "description": "A weather web-application that shows the weather of any city in the world.",
+            "Tech_stack": "JavaScript, HTML, CSS,  Rest-API",
+            "url": "https://weather-vyu6.onrender.com/",
+            "github": ""
         }
     ]
 }

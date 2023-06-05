@@ -2,17 +2,12 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import { getDocs, collection } from 'firebase/firestore';
-import { db } from '../../firebase';
 import bla from "./../../data/portfolio.json"
-import { type } from "@testing-library/user-event/dist/type";
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const [portfolio, setPortfolio] = useState([]);
-    // const portfolio=bla.portfolio
-    // console.log(portfolio)
-    // console.log(typeof portfolio)
+
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -25,14 +20,12 @@ const Portfolio = () => {
     });
 
     useEffect(() => {
-        // getPortfolio();
-        setPortfolio(bla.portfolio)
+        const obj = bla.portfolio
+        setPortfolio(obj)
+
+
     }, []);
 
-    // const getPortfolio = async () => {
-    //     const querySnapshot = await getDocs(collection(db, 'portfolio'));
-    //     setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-    // }
 
     const renderPortfolio = (portfolio) => {
         return (
@@ -48,6 +41,11 @@ const Portfolio = () => {
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
+                                    <h3 style={
+                                        {
+                                            color: "yellow",
+                                        }
+                                    } className="description">{port.Tech_stack}</h3>
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}

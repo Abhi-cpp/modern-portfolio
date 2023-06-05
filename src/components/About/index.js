@@ -16,7 +16,7 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
@@ -34,20 +34,20 @@ const About = () => {
           </h1>
           <p>
             I am a passionate and dedicated BTech student at Bharati Vidyapeeth's
-            College of Engineering in New Delhi. 
+            College of Engineering in New Delhi.
             I am passionate about technology and aim to become a successful software engineer.
           </p>
           <p align="LEFT">
             I am particularly drawn to the exciting world of competitive programming, which I find both thrilling and fulfilling.
-             Through my dedication and hard work,I secured a global rank of 136 in TCS CodeVita programming competition, 
-             which attracted over 100,000 participants worldwide.
+            Through my dedication and hard work,I secured a global rank of 136 in TCS CodeVita programming competition,
+            which attracted over 100,000 participants worldwide.
           </p>
           <p>
-            I also have skills in web development. Currently, I am actively working on CodeCast, 
+            I also have skills in web development. Currently, I am actively working on CodeCast,
             a collaborative code editor project that showcases my ability to create innovative solutions.
           </p>
           <p align="LEFT">
-            Furthermore, I hold the position of Tech-head at the Computer Society of India (CSI), 
+            Furthermore, I hold the position of Tech-head at the Computer Society of India (CSI),
             where I demonstrate my leadership skills and deep understanding of technology.
 
           </p>

@@ -1,10 +1,12 @@
 .home-page {
+
+
   .text-zone {
+    width: 50%;
     position: absolute;
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
     max-height: 90%;
   }
 
@@ -60,6 +62,8 @@
   }
 
   .flat-button {
+    z-index: 99999;
+    background-color: #022c43;
     color: #ffd700;
     font-size: 13px;
     font-weight: 400;
@@ -82,7 +86,8 @@
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+
   .tags,
   .home-page h1:before,
   .home-page h1:after {

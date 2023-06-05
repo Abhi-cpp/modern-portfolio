@@ -5,9 +5,7 @@ import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
-  faGithub,
-  faYoutube,
-  faSkype,
+  faGithub
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,

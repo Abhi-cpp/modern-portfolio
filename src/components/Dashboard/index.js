@@ -10,7 +10,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
-            if(user) {
+            if (user) {
                 setUser(user);
             } else {
                 setUser(null);
@@ -20,9 +20,9 @@ const Dashboard = () => {
 
 
     return (
-       <div>
-           {user ? <Home /> : <Login />}
-       </div>
+        <div>
+            {user ? <Home /> : <Login />}
+        </div>
     )
 }
 
